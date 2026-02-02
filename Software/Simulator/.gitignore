@@ -1,0 +1,10 @@
+# CMake build directory
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.user
+
+# OS files
+.DS_Store
