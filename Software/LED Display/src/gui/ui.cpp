@@ -19,7 +19,7 @@ void ui_create_icon(lv_obj_t* screen, uint32_t id, uint16_t x, uint16_t y,
                     const char* text);
 void ui_event(lv_event_t* e);
 ///////////////////// VARIABLES ////////////////////
-lv_obj_t* ui_animation_screens[4];
+lv_obj_t* ui_animation_screens[9];
 lv_obj_t* ui_configuration_screens[14];
 lv_obj_t* ui_settings_screens[1];
 lv_obj_t* ui_label_brightness;
@@ -77,6 +77,59 @@ void ui_init(void) {
   screen = ui_create_screen();
   ui_animation_screens[3] = screen;
   ui_create_listed_icon(screen, 14, 5, 4, ui_event);
+  ui_create_listed_icon(screen, 15, 110, 4, ui_event);
+  ui_create_listed_icon(screen, 16, 215, 4, ui_event);
+  ui_create_listed_icon(screen, 17, 5, 122, ui_event);
+  ui_create_listed_icon(screen, 18, 110, 122, ui_event);
+  ui_create_icon(screen, 104, 215, 122, ui_event, &ui_img_next_80_png,
+                 "Next page");
+
+  screen = ui_create_screen();
+  ui_animation_screens[4] = screen;
+  ui_create_listed_icon(screen, 19, 5, 4, ui_event);
+  ui_create_listed_icon(screen, 20, 110, 4, ui_event);
+  ui_create_listed_icon(screen, 21, 215, 4, ui_event);
+  ui_create_listed_icon(screen, 22, 5, 122, ui_event);
+  ui_create_listed_icon(screen, 23, 110, 122, ui_event);
+  ui_create_icon(screen, 105, 215, 122, ui_event, &ui_img_next_80_png,
+                 "Next page");
+
+  screen = ui_create_screen();
+  ui_animation_screens[5] = screen;
+  ui_create_listed_icon(screen, 24, 5, 4, ui_event);
+  ui_create_listed_icon(screen, 25, 110, 4, ui_event);
+  ui_create_listed_icon(screen, 26, 215, 4, ui_event);
+  ui_create_listed_icon(screen, 27, 5, 122, ui_event);
+  ui_create_listed_icon(screen, 28, 110, 122, ui_event);
+  ui_create_icon(screen, 106, 215, 122, ui_event, &ui_img_next_80_png,
+                 "Next page");
+
+  screen = ui_create_screen();
+  ui_animation_screens[6] = screen;
+  ui_create_listed_icon(screen, 29, 5, 4, ui_event);
+  ui_create_listed_icon(screen, 30, 110, 4, ui_event);
+  ui_create_listed_icon(screen, 31, 215, 4, ui_event);
+  ui_create_listed_icon(screen, 32, 5, 122, ui_event);
+  ui_create_listed_icon(screen, 33, 110, 122, ui_event);
+  ui_create_icon(screen, 107, 215, 122, ui_event, &ui_img_next_80_png,
+                 "Next page");
+
+  screen = ui_create_screen();
+  ui_animation_screens[7] = screen;
+  ui_create_listed_icon(screen, 34, 5, 4, ui_event);
+  ui_create_listed_icon(screen, 35, 110, 4, ui_event);
+  ui_create_listed_icon(screen, 36, 215, 4, ui_event);
+  ui_create_listed_icon(screen, 37, 5, 122, ui_event);
+  ui_create_listed_icon(screen, 38, 110, 122, ui_event);
+  ui_create_icon(screen, 108, 215, 122, ui_event, &ui_img_next_80_png,
+                 "Next page");
+
+  screen = ui_create_screen();
+  ui_animation_screens[8] = screen;
+  ui_create_listed_icon(screen, 39, 5, 4, ui_event);
+  ui_create_listed_icon(screen, 40, 110, 4, ui_event);
+  ui_create_listed_icon(screen, 41, 215, 4, ui_event);
+  ui_create_listed_icon(screen, 42, 5, 122, ui_event);
   ui_create_icon(screen, 100, 215, 122, ui_event, &ui_img_next_80_png,
                  "Next page");
 
@@ -119,7 +172,21 @@ void ui_create_listed_icon(lv_obj_t* screen, uint32_t id, uint16_t x,
       &ui_img_pong_80_png,          &ui_img_scroller_80_png,
       &ui_img_sinus_80_png,         &ui_img_spectrum_80_png,
       &ui_img_starfield_80_png,     &ui_img_twinkels1_80_png,
-      &ui_img_twinkels2_80_png};
+      &ui_img_twinkels2_80_png,     &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png,       &ui_img_generic_80_png,
+      &ui_img_generic_80_png};
   const lv_img_dsc_t* image = images[id];
   const char* text = Animation::get_item(id).name;
   ui_create_icon(screen, id, x, y, event, image, text);

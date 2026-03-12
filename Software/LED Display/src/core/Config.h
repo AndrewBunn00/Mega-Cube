@@ -202,6 +202,195 @@ struct Config {
       uint8_t brightness = 255;
       uint8_t motionBlur = 0;
     } twinkels;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 200;
+    } rain;
+    struct {
+      float starttime = 5.0f;
+      float runtime = 30.0f;
+      float endtime = 5.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 0;
+    } aurora;
+    struct {
+      float starttime = 5.0f;
+      float runtime = 30.0f;
+      float endtime = 5.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 0;
+    } lavalamp;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 220;
+    } fireflies;
+    struct {
+      float starttime = 5.0f;
+      float runtime = 30.0f;
+      float endtime = 5.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 0;
+    } ocean;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 230;
+    } lorenz;
+    struct {
+      float starttime = 5.0f;
+      float runtime = 30.0f;
+      float endtime = 5.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 200;
+    } torus;
+    struct {
+      float starttime = 5.0f;
+      float runtime = 30.0f;
+      float endtime = 5.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 200;
+    } sierpinski;
+    struct {
+      float starttime = 5.0f;
+      float runtime = 30.0f;
+      float endtime = 5.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 200;
+    } moebius;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 240;
+    } spirograph;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 200;
+    } snake;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 0;
+    } tetris;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 220;
+    } pong3d;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 0;
+    } maze;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 200;
+    } globe;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 220;
+    } dna;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 200;
+    } heart;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 180;
+    } hourglass;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 220;
+    } galaxy;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 220;
+    } tornado;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 200;
+    } fountain;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 200;
+    } explosion;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 220;
+    } boids;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 0;
+    } matrix;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 0;
+    } ripple;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 0;
+    } kaleidoscope;
+    struct {
+      float starttime = 3.0f;
+      float runtime = 30.0f;
+      float endtime = 3.0f;
+      uint8_t brightness = 255;
+      uint8_t motionBlur = 0;
+    } interference;
   } animation;
 
   // Do not serialize devices

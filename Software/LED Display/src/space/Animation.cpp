@@ -15,6 +15,33 @@
 #include "Starfield.h"
 #include "Twinkels.h"
 #include "Cube.h"
+#include "Rain.h"
+#include "Aurora.h"
+#include "LavaLamp.h"
+#include "Fireflies.h"
+#include "Ocean.h"
+#include "Lorenz.h"
+#include "Torus.h"
+#include "Sierpinski.h"
+#include "Moebius.h"
+#include "Spirograph.h"
+#include "Snake.h"
+#include "Tetris.h"
+#include "Pong3D.h"
+#include "Maze.h"
+#include "Globe.h"
+#include "DNA.h"
+#include "Heart.h"
+#include "Hourglass.h"
+#include "Galaxy.h"
+#include "Tornado.h"
+#include "Fountain.h"
+#include "Explosion.h"
+#include "Boids.h"
+#include "Matrix.h"
+#include "Ripple.h"
+#include "Kaleidoscope.h"
+#include "Interference.h"
 /*------------------------------------------------------------------------------
  * ANIMATION STATIC DEFINITIONS
  *----------------------------------------------------------------------------*/
@@ -40,11 +67,45 @@ Spectrum spectrum;
 Starfield starfield;
 Twinkels twinkels;
 Cube cube;
+Rain rain;
+Aurora aurora;
+LavaLamp lavalamp;
+Fireflies fireflies;
+Ocean ocean;
+Lorenz lorenz;
+Torus torus;
+Sierpinski sierpinski;
+Moebius moebius;
+Spirograph spirograph;
+Snake snake;
+Tetris tetris;
+Pong3D pong3d;
+Maze maze;
+Globe globe;
+DNA dna;
+Heart heart;
+Hourglass hourglass;
+Galaxy galaxy;
+Tornado tornado;
+Fountain fountain;
+Explosion explosion;
+Boids boids;
+Matrix matrix;
+Ripple ripple;
+Kaleidoscope kaleidoscope;
+Interference interference;
 
 Animation *Animations[] = {&atoms,      &sinus,    &starfield,    &fireworks1,
                            &fireworks2, &twinkels, &helix,        &arrows,
                            &plasma,     &mario,    &life,         &pong,
-                           &spectrum,   &scroller, &accelerometer, &cube};
+                           &spectrum,   &scroller, &accelerometer, &cube,
+                           &rain,       &aurora,   &lavalamp,     &fireflies,
+                           &ocean,      &lorenz,   &torus,        &sierpinski,
+                           &moebius,    &spirograph, &snake,      &tetris,
+                           &pong3d,     &maze,     &globe,        &dna,
+                           &heart,      &hourglass, &galaxy,      &tornado,
+                           &fountain,   &explosion, &boids,       &matrix,
+                           &ripple,     &kaleidoscope, &interference};
 
 const uint8_t ANIMATIONS = sizeof(Animations) / sizeof(Animation *);
 /*----------------------------------------------------------------------------*/
@@ -136,6 +197,33 @@ jump_item_t Animation::get_item(uint16_t index) {
       {"Starfield", "To boldly go...", 0, &starfield},
       {"Fairylights", "Beautifull fairylights", &TWINKELS1, &twinkels},
       {"Multilights", "Multicolor fairylights", &TWINKELS2, &twinkels},
+      {"Rain", "Rainfall with splashes", 0, &rain},
+      {"Aurora", "Northern lights", 0, &aurora},
+      {"Lava Lamp", "Metaball lava lamp", 0, &lavalamp},
+      {"Fireflies", "Glowing fireflies", 0, &fireflies},
+      {"Ocean", "Rolling ocean waves", 0, &ocean},
+      {"Lorenz", "Lorenz attractor", 0, &lorenz},
+      {"Torus", "Spinning torus", 0, &torus},
+      {"Sierpinski", "Sierpinski fractal", 0, &sierpinski},
+      {"Moebius", "Moebius strip", 0, &moebius},
+      {"Spirograph", "3D spirograph", 0, &spirograph},
+      {"Snake", "Snake game", 0, &snake},
+      {"Tetris", "3D Tetris", 0, &tetris},
+      {"Pong 3D", "3D Pong game", 0, &pong3d},
+      {"Maze", "3D maze generator", 0, &maze},
+      {"Globe", "Spinning globe", 0, &globe},
+      {"DNA", "DNA double helix", 0, &dna},
+      {"Heart", "Beating heart", 0, &heart},
+      {"Hourglass", "Sand hourglass", 0, &hourglass},
+      {"Galaxy", "Spiral galaxy", 0, &galaxy},
+      {"Tornado", "Spinning tornado", 0, &tornado},
+      {"Fountain", "Particle fountain", 0, &fountain},
+      {"Explosion", "Fireball explosion", 0, &explosion},
+      {"Boids", "Flocking boids", 0, &boids},
+      {"Matrix", "Matrix rain", 0, &matrix},
+      {"Ripple", "Water ripples", 0, &ripple},
+      {"Kaleidoscope", "Kaleidoscope pattern", 0, &kaleidoscope},
+      {"Interference", "Wave interference", 0, &interference},
       {0, 0, 0, 0}};
   const uint16_t JUMPITEMS = sizeof(jump_table) / sizeof(jump_item_t) - 1;
   if (index > JUMPITEMS)

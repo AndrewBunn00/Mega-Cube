@@ -2522,15 +2522,21 @@ int main() {
 
     demos[currentDemo]->init();
     printf("Animation: %s\n", demos[currentDemo]->name());
-    printf("Press SPACE for next animation, R to reset\n\n");
+    printf("Press RIGHT/SPACE for next, LEFT for previous, R to reset\n\n");
 
     while (!Renderer::shouldClose()) {
         float dt = Renderer::getDeltaTime();
 
         Renderer::beginFrame();
 
-        if (Renderer::wasKeyPressed(GLFW_KEY_SPACE)) {
+        if (Renderer::wasKeyPressed(GLFW_KEY_SPACE) || Renderer::wasKeyPressed(GLFW_KEY_RIGHT)) {
             currentDemo = (currentDemo + 1) % numDemos;
+            demos[currentDemo]->init();
+            printf("Animation: %s\n", demos[currentDemo]->name());
+        }
+
+        if (Renderer::wasKeyPressed(GLFW_KEY_LEFT)) {
+            currentDemo = (currentDemo - 1 + numDemos) % numDemos;
             demos[currentDemo]->init();
             printf("Animation: %s\n", demos[currentDemo]->name());
         }

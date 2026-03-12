@@ -34,6 +34,7 @@ LV_IMG_DECLARE(ui_img_twinkels1_80_png);      // assets/Twinkels1_80.png
 LV_IMG_DECLARE(ui_img_twinkels2_80_png);      // assets/Twinkels2_80.png
 LV_IMG_DECLARE(ui_img_scroller_80_png);       // assets/Scroller_80.png
 LV_IMG_DECLARE(ui_img_maltwhiskey_png);       // assets/MaltWhiskey.png
+LV_IMG_DECLARE(ui_img_generic_80_png);        // assets/Generic_80.png
 
 void ui_init(void);
 
